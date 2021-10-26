@@ -9,6 +9,7 @@ Demonstrating scratching gift/cashback coupon like effect in Jetpack Compose
 Having Fun in Jetpack Compose 🚀
 
 ## :camera_flash: Video
+https://user-images.githubusercontent.com/40730402/138947613-122a6e00-88ef-4855-ae83-d65f92363a22.mp4
 
 
 
