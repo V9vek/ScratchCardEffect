@@ -3,8 +3,7 @@ package com.vivek.scratchview
 import android.graphics.Bitmap
 import android.view.MotionEvent
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
@@ -29,19 +28,12 @@ fun ScratchingCanvas(
     onMovedOffset: (Float, Float) -> Unit,
     currentPath: Path,
     currentPathThickness: Float,
-    background: @Composable () -> Unit,
-    //overlay: @Composable () -> Unit
+    background: @Composable () -> Unit
 ) {
 
     Box(modifier = modifier.clipToBounds()) {
         // Base Image
         background()
-
-       /* val composeView = ComposeView(LocalContext.current)
-        composeView.setContent {
-            overlay()
-        }
-        composeView.takeScreenShot()*/
 
         // Overlay Image
         Canvas(
